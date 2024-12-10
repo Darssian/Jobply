@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Axiforma-Book';
+    src: url('../fonts/axiforma-book.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/axiforma-book.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/axiforma-book.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/axiforma-book.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/axiforma-book.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/axiforma-book.svg#axiforma-book') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Perpetua';
+    src: url('../fonts/perpetua.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/perpetua.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/perpetua.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/perpetua.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/perpetua.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/perpetua.svg#perpetua') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url("../fonts/georgia.ttf");
+}
