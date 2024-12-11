@@ -32,6 +32,19 @@ h6 {
     font-size: inherit;
 }
 
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    width: auto;
+}
+
 html,
 body {
     height: 100%;
@@ -40,7 +53,7 @@ body {
 
 body {
     font-family: Rubik, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #616161;
 }
 
@@ -186,10 +199,13 @@ body {}
 
 @media (max-width: 479.98px) {
     .menu_body {
-    top: 10px;
+        top: 10px;
     }
+
     .header {
         padding: 30px 0;
+        position: fixed;
+        background-color: #fff;
     }
 
     .header_container {
@@ -293,4 +309,441 @@ body {}
     .header:target .close-icon-menu {
         display: flex;
     }
+}
+
+
+/* block-text */
+
+.block-text>*:not(:first-child) {
+    margin-top: 50px;
+}
+
+.block-text_title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    color: #353540;
+}
+
+.block-text_text {
+    font-family: "Axiforma", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 189%;
+    letter-spacing: 0.02em;
+    color: #5d5d61;
+}
+
+/* welcome */
+
+.welcome {
+    padding-top: 164px;
+    padding-bottom: 194px;
+}
+
+.welcome_background {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+
+    width: 650px;
+    height: 919px;
+    background: url('../img/background/background.png') bottom left repeat;
+    filter: grayscale(100%);
+    mix-blend-mode: luminosity;
+    opacity: 0.05;
+}
+
+.welcome_background img {}
+
+.welcome_container {}
+
+.welcome_body {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.welcome_block-text {
+    margin-top: 100px;
+
+    width: 668px;
+}
+
+.welcome_block-text .block-text_title {
+    font-size: 72px;
+    line-height: 132%;
+}
+
+.welcome_block-text .block-text_text {
+    width: 598px;
+
+    margin-top: 30px;
+}
+
+.block-text_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 30px 70px 0 rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.form-example {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 50px;
+    border-radius: 10px;
+    max-width: 658px;
+    height: 70px;
+    padding: 22px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+
+.form-example input {
+    flex: 1;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #5d5d61;
+    box-sizing: border-box;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper::after {
+    content: '';
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 80%;
+    width: 1px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-example_icon {}
+
+.icon-search {}
+
+.icon-location {}
+
+.form_btn {
+    border-radius: 0 10px 10px 0;
+    min-width: 181px;
+    height: 70px;
+}
+
+._btn {}
+
+.welcome_img {
+    z-index: -5;
+
+    position: absolute;
+    right: -334px;
+    top: 20px;
+
+    max-width: 816px;
+    max-height: 816px;
+
+    overflow: hidden;
+
+}
+
+.welcome_img img {
+    object-position: center;
+    object-fit: cover;
+
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        padding-top: 91px;
+    }
+
+    .welcome_background {
+        display: none;
+    }
+
+    .welcome_block-text .block-text_title {
+        font-size: 46px;
+        line-height: 132%;
+        color: #000;
+    }
+
+    .welcome_block-text .block-text_text {
+        width: 100%;
+        margin-top: 15px;
+        color: #000000;
+    }
+
+    .welcome_block-text {
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .block-text_form {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .form-example {
+        padding: 10px;
+    }
+
+    .form-example input {
+        font-size: 14px;
+    }
+
+    .form_btn {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        padding: 28px 0;
+    }
+
+    .welcome_img {
+        opacity: 0.7;
+    }
+
+    .form-example {
+        padding: 10px;
+    }
+
+    .form-example input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form_btn {
+        min-width: 100%;
+        height: 50px;
+    }
+}
+
+/* popular job */
+
+.popular-job {
+    position: relative;
+    padding: 95px 0 71px 0;
+
+}
+
+.popular-job_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    background-color: #232443;
+
+}
+
+.popular-job_background::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    background: url('../img/background/background.png');
+    opacity: 0.2;
+}
+
+.popular-job_container {}
+
+.popular-job_content {}
+
+.popular-job_title {
+    line-height: 156%;
+    color: #fff;
+}
+
+.popular-job_cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.popular-job_card {
+    flex: 1 1 auto;
+
+    overflow: hidden;
+    color: #353540;
+
+    backdrop-filter: blur(30px);
+    background: #fff;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.popular-job_card:hover {
+    color: #fff;
+
+    backdrop-filter: blur(50px);
+    background: rgba(238, 79, 60, 0.5);
+}
+
+.popular-job_card:hover .popular-job_card_content_text {
+    color: #f8f8f8;
+}
+
+.popular-job_card:hover .popular-job_card_footer_btn {
+    color: #fff;
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.popular-job_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-job_card_header-name {
+    display: flex;
+    align-items: center;
+
+    height: 55px;
+
+    font-family: "Axiforma", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+
+
+.popular-job_card_header-users {}
+
+.popular-job_card_content {}
+
+.popular-job_card_content_title {
+    margin-top: 20px;
+
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+}
+
+.popular-job_card_content_text {
+    margin-top: 12px;
+
+    font-family: "Axiforma", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #5d5d61;
+}
+
+.popular-job_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 36px;
+}
+
+.popular-job_card_footer_btn {
+    text-align: center;
+
+    border-radius: 5px;
+    width: 100px;
+
+    padding: 8px 0;
+    margin-right: 10px;
+
+    background: #f5f5f5;
+}
+
+.popular-job_card_footer_price {
+    font-family: "Axiforma", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+
+    margin-left: 19px;
+}
+
+.icon-stack::before,
+.icon-google::before,
+.icon-indeed::before {
+    margin-right: 15px;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    content: '';
+    background-size: auto;
+    background-position: 50% 46%;
+    background-repeat: no-repeat;
+
+    object-position: center;
+}
+
+.icon-stack::before {
+    background-image: url('/img/icon/stack.svg');
+}
+
+.icon-google::before {
+    background-image: url('/img/icon/google.svg');
+}
+
+.icon-indeed::before {
+    background-image: url('/img/icon/indeed.svg');
+}
+
+.popular-job_link {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 70px;
+    margin: 0 auto;
+
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.popular-job_link::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/icon/arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 13px;
+    vertical-align: middle;
 }
