@@ -71,7 +71,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
-    max-width: 1170px;
+    max-width: 1200px;
 }
 
 ._btn {
@@ -746,4 +746,160 @@ body {}
     background-repeat: no-repeat;
     margin-left: 13px;
     vertical-align: middle;
+}
+
+/* job categories */
+
+
+.job_categiries {
+    margin: 150px 0;
+}
+
+.job_categiries_container {}
+
+.job_categiries_content {}
+
+.job_categiries_title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    color: #353540;
+}
+
+.job_categiries_cards {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.job_categiries_card {
+    padding: 30px 25px 52px 25px;
+
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: all .3s;
+}
+
+.job_categiries_card:hover {
+    box-shadow: 0 70px 70px 0 #eee;
+    border-style: none;
+    transition: all .3s;
+
+}
+
+.job_categiries_card:hover .job_categiries_card-icon {
+    transition: all .3s;
+
+    background-color: #ee4f3c;
+}
+
+.job_categiries_card:hover .job_categiries_card-icon img {
+    filter: invert(22%) brightness(300%);
+    transition: all .3s;
+
+}
+
+.job_categiries_card-icon {
+    display: flex;
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fff8f8;
+}
+
+.job_categiries_card-icon img {
+    display: inline-block;
+    margin: auto;
+}
+
+.job_categiries_card-title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #353540;
+
+    margin-top: 30px;
+    min-width: 218px;
+}
+
+.job_categiries_card-text {
+    font-family: "Axiforma", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #353540;
+
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .job_categiries_card {
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 768.99px) {
+    .job_categiries {
+        margin: 70px 0;
+    }
+}
+
+
+/* new job */
+
+.new_job {
+    height: 886px;
+}
+.new_job_container {
+    height: 100%;
+}
+.new_job_content {
+    position: relative;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.new_job_img {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: -264px;
+}
+.new_job_block-text {
+    width: 460px;
+}
+.new_job .block-text_text {
+    text-align: left;
+    width: 365px;
+}
+.block-text_title {
+}
+.block-text_text {
+}
+.block-text_btn {
+}
+.btn {
+}
+
+@media (max-width: 968.99px) {
+.new_job_block-text .block-text_text, .block-text_title{
+    color: black;
+}
+.new_job_img {
+    right: -491px;
+    opacity: .7;
+}
 }
