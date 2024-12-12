@@ -92,6 +92,29 @@ body {
     color: #fff;
 }
 
+._background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+._background::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    background: url('../img/background/background.png');
+    opacity: .05;
+
+}
+
 main {
     flex: 1 1 auto;
 }
@@ -777,7 +800,7 @@ body {}
 }
 
 .job_categiries_card {
-    padding: 30px 25px 52px 25px;
+    padding: 30px 24px 52px 24px;
 
     border: 1px solid #eee;
     border-radius: 20px;
@@ -788,7 +811,7 @@ body {}
 
 .job_categiries_card:hover {
     box-shadow: 0 70px 70px 0 #eee;
-    border-style: none;
+    border-color: transparent;
     transition: all .3s;
 
 }
@@ -853,6 +876,10 @@ body {}
     .job_categiries {
         margin: 70px 0;
     }
+
+    .job_categiries_cards {
+        gap: 15px;
+    }
 }
 
 
@@ -861,9 +888,11 @@ body {}
 .new_job {
     height: 886px;
 }
+
 .new_job_container {
     height: 100%;
 }
+
 .new_job_content {
     position: relative;
     height: 100%;
@@ -872,34 +901,416 @@ body {}
     align-items: center;
     justify-content: start;
 }
+
 .new_job_img {
     position: absolute;
     z-index: -2;
     top: 0;
     right: -264px;
 }
+
 .new_job_block-text {
     width: 460px;
 }
+
 .new_job .block-text_text {
     text-align: left;
-    width: 365px;
-}
-.block-text_title {
-}
-.block-text_text {
-}
-.block-text_btn {
-}
-.btn {
+    max-width: 365px;
 }
 
+.block-text_title {}
+
+.block-text_text {}
+
+.block-text_btn {}
+
+.btn {}
+
 @media (max-width: 968.99px) {
-.new_job_block-text .block-text_text, .block-text_title{
-    color: black;
+
+    .new_job_block-text .block-text_text,
+    .new_job_block-text .block-text_title {
+        color: black;
+    }
+
+    .new_job_img {
+        right: -491px;
+        opacity: .7;
+    }
 }
-.new_job_img {
-    right: -491px;
-    opacity: .7;
+
+
+/* post job */
+
+.post_job {
+    position: relative;
+
+    padding-top: 100px;
+    margin-bottom: 90px;
 }
+
+.post_job_background {
+    height: 750px;
+    width: 57%;
+    background: #fff8f8;
+}
+
+.post_job_background::before {}
+
+
+.post_job_container {}
+
+.post_job_content {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap-reverse;
+}
+
+.post_job_video {
+    width: 570px;
+    height: 750px;
+
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.post_job_video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.post_job_block-text {
+    display: block;
+    max-width: 412px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-right: 50px;
+}
+
+.block-text {}
+
+.block-text_title {}
+
+.block-text_text {}
+
+.block-text_btn {}
+
+._btn {}
+
+@media (max-width: 1022px) {
+    .post_job {
+        padding: 0;
+    }
+
+    .post_job_block-text {
+        margin-top: 45px;
+        padding: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .block-text>*:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .post_job_video {
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 426.99px) {
+    .block-text_btn {
+        width: 100%;
+    }
+}
+
+
+/* great_feedback */
+
+
+.great_feedback {
+    padding: 150px 0;
+}
+
+.great_feedback_container {}
+
+.great_feedback_content {}
+
+.great_feedback_title {
+    width: 439px;
+}
+
+.block-text_title {}
+
+.great_feedback_cards {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.great_feedback_card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    padding: 53px 36px;
+    width: 44%;
+    min-width: 570px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+
+    font-family: "Axiforma", sans-serif;
+    font-weight: 300;
+    color: #5d5d61;
+
+
+    height: 500px;
+}
+
+.great_feedback_card_quotes {
+    width: 50px;
+    height: 50px;
+}
+
+.great_feedback_card_quotes img {
+    object-fit: none;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.great_feedback_card_text {
+    font-size: 18px;
+    line-height: 189%;
+    letter-spacing: 0.02em;
+}
+
+.great_feedback_card_footer {
+    flex: 1;
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.great_feedback_card_footer_avatar {
+    margin-top: auto;
+
+    height: auto;
+    width: auto;
+}
+
+.great_feedback_card_footer_avatar img {}
+
+.great_feedback_card_footer_content {
+    padding: 30px 0 0 30px;
+}
+
+.great_feedback_card_footer_content-name {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #353540;
+}
+
+.great_feedback_card_footer_content-job {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+}
+
+.great_feedback_card_footer_content-stars {
+    margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+    .great_feedback_title {
+        width: auto;
+        text-align: center;
+    }
+
+    .great_feedback_card {
+        gap: 15px;
+
+    }
+
+    .great_feedback_card {
+        flex: 1 1 auto;
+        max-width: 80%;
+        height: auto;
+        padding: 36px;
+
+    }
+
+    .great_feedback_card_footer {
+        margin-top: 10px;
+        flex: 0;
+    }
+
+    .great_feedback_card_footer_content {
+        padding: 0 0 0 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .great_feedback {
+        padding: 50px 0;
+    }
+
+    .great_feedback_cards {
+        flex-direction: column;
+    }
+
+    .great_feedback_card {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .great_feedback_card_footer {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .great_feedback_card_footer_content {
+        padding: 0;
+    }
+}
+
+
+
+/* subscribe */
+
+
+.subscribe {
+    position: relative;
+    height: 469px;
+}
+
+.subscribe_background {
+    top: auto;
+    bottom: 0;
+    height: 372px;
+    width: 100vw;
+}
+
+.subscribe_background::before {
+    background-size: auto 100%;
+}
+
+.subscribe_container {}
+
+.subscribe_content {}
+
+.subscribe_block-text {
+    position: relative;
+    z-index: 0;
+    padding: 85px 150px;
+    border-radius: 20px;
+    background: #ee4f3c;
+}
+
+.subscribe_block-text::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    background: url('../img/subscribe/decor_1.svg') no-repeat;
+    bottom: 12px;
+    left: 12px;
+    width: 90px;
+    height: 94px;
+}
+
+.subscribe_block-text::after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    background: url('../img/subscribe/decor_2.svg') no-repeat;
+    top: 0;
+    right: 0;
+    width: 359px;
+    height: 400px;
+}
+
+
+.subscribe .block-text_title {
+    max-width: 515px;
+    color: #fff;
+}
+
+.subscribe .block-text_form {
+    background-color: #fff;
+    box-shadow: none;
+    padding: 5px;
+    max-width: 770px;
+}
+
+.subscribe .form-example {
+    flex: auto;
+    width: auto;
+}
+
+.subscribe_btn {
+    padding: 0 37px;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
+    min-width: 0;
+}
+
+.subscribe_btn::after {
+    content: '';
+    display: block;
+    background: url('../img/icon/subside.svg') no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 15px;
+}
+
+@media (max-width: 900px) {
+    .subscribe .block-text_form {
+        flex-direction: row;
+    }
+
+    .subscribe_block-text {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 586px) {
+    .block-text_title {
+        font-size: 36px;
+    }
+
+    .subscribe_btn {
+        flex: 1 1 auto;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .subscribe_block-text {
+        padding: 30px;
+    }
+    .subscribe .block-text_form {
+        flex-direction: column;
+        background: transparent;
+    }
+    .subscribe .form-example {
+        width: 100%;
+    }
+    .subscribe_btn{
+        margin-top: 10px;
+        width: 100%;
+        background: rgb(187, 57, 42);
+    }
 }
