@@ -7,13 +7,15 @@
     <title>JOBPLAY</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <header id="open" class="header">
             <div id="close" class="header_container">
-                <a href="./index.html" class="header_logo logo">J<span>o</span>bply</a>
+                <a href="./index.html" class="header_logo logo" data-aos="fade-right">J<span>o</span>bply</a>
                 <div class="header_menu menu">
                     <nav id="menu" class="menu_body">
                         <ul class="menu_list">
@@ -24,7 +26,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header_btn"><a href="" class="_btn">Post a Vacancy</a>
+                <div class="header_btn" data-aos="fade-up">
+                    <a href="" class="_btn">Post a Vacancy</a>
                     <a href="#open" class="icon-menu"><span></span></a>
                     <a href="#close" class="close-icon-menu"></a>
                 </div>
@@ -35,18 +38,19 @@
                 <div class="welcome_background"></div>
                 <div class="welcome_container">
                     <div class="welcome_body">
-                        <div class="welcome_img">
+                        <div class="welcome_img" data-aos="zoom-in">
                             <img src="./img/welcome/welcome.png" alt="">
                         </div>
-                        <div class="welcome_block-text block-text">
-                            <div class="block-text_title">Find & Apply For
+                        <div class="welcome_block-text block-text" data-aos="fade-up">
+                            <div class="block-text_title" data-aos="fade-left">Find & Apply For
                                 Your Dream Job</div>
-                            <div class="block-text_text">The website is chockablock with useful features, allowing you
+                            <div class="block-text_text" data-aos="fade-right">The website is chockablock with useful
+                                features, allowing you
                                 to
                                 efficiently search and apply for roles across all sectors, experience levels and
                                 locations.
                             </div>
-                            <form action="" method="get" class="block-text_form">
+                            <form action="" method="get" class="block-text_form" data-aos="fade-up">
                                 <div class="form-example input-wrapper">
                                     <img src="./img/icon/search_icon.svg" alt="" class="form-example_icon icon-search">
                                     <input type="text" name="job" id="job" placeholder="Job title or Keyword"
@@ -68,9 +72,9 @@
                 <div class="popular-job_background"></div>
                 <div class="popular-job_container">
                     <div class="popular-job_content">
-                        <div class="popular-job_title block-text_title">Popular Job Posts</div>
+                        <div class="popular-job_title block-text_title" data-aos="fade-right">Popular Job Posts</div>
                         <div class="popular-job_cards">
-                            <div class="popular-job_card">
+                            <div class="popular-job_card" data-aos="fade-left">
                                 <div class="popular-job_card_header">
                                     <div class="popular-job_card_header-name icon-stack">Slack</div>
                                     <div class="popular-job_card_header-users"><img
@@ -86,7 +90,7 @@
                                     <div class="popular-job_card_footer_price">$10k - $25k</div>
                                 </div>
                             </div>
-                            <div class="popular-job_card">
+                            <div class="popular-job_card" data-aos="zoom-in">
                                 <div class="popular-job_card_header">
                                     <div class="popular-job_card_header-name icon-google">Google</div>
                                     <div class="popular-job_card_header-users"><img
@@ -102,7 +106,7 @@
                                     <div class="popular-job_card_footer_price">$10k - $25k</div>
                                 </div>
                             </div>
-                            <div class="popular-job_card">
+                            <div class="popular-job_card" data-aos="fade-right">
                                 <div class="popular-job_card_header">
                                     <div class="popular-job_card_header-name icon-indeed">Indeed</div>
                                     <div class="popular-job_card_header-users"><img
@@ -128,49 +132,50 @@
                     <div class="job_categiries_content">
                         <div class="job_categiries_title"></div>
                         <div class="job_categiries_cards">
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="100">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_1.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Accouting & Finance</div>
                                 <div class="job_categiries_card-text">125 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_2.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">UI/UX Design</div>
                                 <div class="job_categiries_card-text">52 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="300">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_3.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Content Writing</div>
                                 <div class="job_categiries_card-text">150 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="400">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_4.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Accouting & Finance</div>
                                 <div class="job_categiries_card-text">125 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="500">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_5.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Digital Marketing</div>
                                 <div class="job_categiries_card-text">150 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="600">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_6.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Technical Support</div>
                                 <div class="job_categiries_card-text">350 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="700">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_7.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Human Resource</div>
                                 <div class="job_categiries_card-text">35 Job Vacancy</div>
                             </div>
-                            <div class="job_categiries_card">
+                            <div class="job_categiries_card" data-aos="fade-up" data-aos-delay="800">
                                 <div class="job_categiries_card-icon"><img src="./img/icon/job_categiries_icon_8.svg"
                                         alt=""></div>
                                 <div class="job_categiries_card-title">Art & Illustration</div>
@@ -180,57 +185,61 @@
                     </div>
                 </div>
             </section>
-            <section class="new_job">
+            <section class="new_job" data-aos="fade-up">
                 <div class="new_job_container">
                     <div class="new_job_content">
-                        <div class="new_job_img"><img src="./img/new_job/people.png" alt=""></div>
-                        <div class="new_job_block-text block-text">
-                            <div class="block-text_title">Get Start New Job</div>
-                            <div class="block-text_text">create an account so you can get job information that suits
-                                you,
+                        <div class="new_job_img" data-aos="zoom-in">
+                            <img src="./img/new_job/people.png" alt="">
+                        </div>
+                        <div class="new_job_block-text block-text" data-aos="fade-right">
+                            <div class="block-text_title" data-aos="fade-left">Get Start New Job</div>
+                            <div class="block-text_text" data-aos="fade-right">
+                                Create an account so you can get job information that suits you,
                                 and you can apply the salary your demand.
                             </div>
-                            <a href="" class="block-text_btn _btn">Create an Account</a>
+                            <a href="" class="block-text_btn _btn" data-aos="fade-up">Create an Account</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="post_job">
+
+            <section class="post_job" data-aos="fade-up">
                 <div class="post_job_background _background"></div>
                 <div class="post_job_container">
                     <div class="post_job_content">
-                        <div class="post_job_video">
+                        <div class="post_job_video" data-aos="zoom-in">
                             <iframe width="570" height="750"
                                 src="https://www.youtube.com/embed/5lzJ4aGOGd4?si=8eaM4Us12A0zMY0U"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="post_job_block-text block-text">
-                            <div class="block-text_title">Post a Job for
-                                UX Designer</div>
-                            <div class="block-text_text">create an account so you can get job information that suits
-                                you,
+                        <div class="post_job_block-text block-text" data-aos="fade-left">
+                            <div class="block-text_title" data-aos="fade-up">Post a Job for UX Designer</div>
+                            <div class="block-text_text" data-aos="fade-right">Create an account so you can get job
+                                information that suits you,
                                 and you can apply the salary your demand.
                             </div>
-                            <a href="" class="block-text_btn _btn">Post a Job</a>
+                            <a href="" class="block-text_btn _btn" data-aos="fade-up">Post a Job</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="great_feedback">
+
+            <section class="great_feedback" data-aos="fade-up">
                 <div class="great_feedback_container">
                     <div class="great_feedback_content">
-                        <div class="great_feedback_title block-text_title">Great Feedback
-                            From Candidates</div>
+                        <div class="great_feedback_title block-text_title" data-aos="fade-up">Great Feedback From
+                            Candidates</div>
                         <div class="great_feedback_cards">
-                            <div class="great_feedback_card">
+                            <div class="great_feedback_card" data-aos="fade-up" data-aos-delay="100">
                                 <div class="great_feedback_card_quotes"><img src="./img/icon/quotes.svg" alt=""></div>
-                                <div class="great_feedback_card_text">Very decent services & care about my health.
-                                    Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry Very decent services & care about my health. Really happy with
-                                    his advice.</div>
-                                <div class="great_feedback_card_footer">
+                                <div class="great_feedback_card_text" data-aos="fade-left">
+                                    Very decent services & care about my health. Really happy with his advice. Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry. Very decent
+                                    services & care about my health. Really happy with his advice.
+                                </div>
+                                <div class="great_feedback_card_footer" data-aos="fade-up">
                                     <div class="great_feedback_card_footer_avatar"><img
                                             src="./img/feedback/avatar_1.png" alt=""></div>
                                     <div class="great_feedback_card_footer_content">
@@ -246,12 +255,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="great_feedback_card">
+                            <div class="great_feedback_card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="great_feedback_card_quotes"><img src="./img/icon/quotes.svg" alt=""></div>
-                                <div class="great_feedback_card_text">Very decent services & care about my health.
-                                    Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                                <div class="great_feedback_card_footer">
+                                <div class="great_feedback_card_text" data-aos="fade-left">
+                                    Very decent services & care about my health. Really happy with his advice. Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="great_feedback_card_footer" data-aos="fade-up">
                                     <div class="great_feedback_card_footer_avatar"><img
                                             src="./img/feedback/avatar_2.png" alt=""></div>
                                     <div class="great_feedback_card_footer_content">
@@ -267,13 +277,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="great_feedback_card">
+                            <div class="great_feedback_card" data-aos="fade-up" data-aos-delay="300">
                                 <div class="great_feedback_card_quotes"><img src="./img/icon/quotes.svg" alt=""></div>
-                                <div class="great_feedback_card_text">Very decent services & care about my health.
-                                    Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry Very decent services & care about my health. Really happy with
-                                    his advice.</div>
-                                <div class="great_feedback_card_footer">
+                                <div class="great_feedback_card_text" data-aos="fade-left">
+                                    Very decent services & care about my health. Really happy with his advice. Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry. Very decent
+                                    services & care about my health. Really happy with his advice.
+                                </div>
+                                <div class="great_feedback_card_footer" data-aos="fade-up">
                                     <div class="great_feedback_card_footer_avatar"><img
                                             src="./img/feedback/avatar_3.png" alt=""></div>
                                     <div class="great_feedback_card_footer_content">
@@ -293,26 +304,111 @@
                     </div>
                 </div>
             </section>
-            <section class="subscribe">
-                <div class="subscribe_background _background">-</div>
+
+            <section class="subscribe" data-aos="fade-up">
+                <div class="subscribe_background _background"></div>
                 <div class="subscribe_container">
                     <div class="subscribe_content">
-                        <div class="block-text subscribe_block-text">
-                            <div class="block-text_title">Subscribe to get 
-                                update vacancy post</div>
-                            <form action="" method="get" class="block-text_form">
-                                <div class="form-example">
+                        <div class="block-text subscribe_block-text" data-aos="fade-left">
+                            <div class="block-text_title" data-aos="fade-up">Subscribe to get update vacancy post</div>
+                            <form action="" method="get" class="block-text_form" data-aos="fade-right">
+                                <div class="form-example" data-aos="zoom-in">
                                     <input type="mail" name="mail" id="mail" placeholder="infomail856@gmail.com"
                                         required />
                                 </div>
-                                <button type="submit" class="form_btn _btn subscribe_btn">Subscribe</button>
+                                <button type="submit" class="form_btn _btn subscribe_btn"
+                                    data-aos="fade-up">Subscribe</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
+
+            <footer class="footer" data-aos="fade-up">
+                <div class="footer_container">
+                    <div class="footer_content">
+                        <div class="footer_body">
+                            <div class="footer_main" data-aos="fade-left">
+                                <div class="footer_logo logo" data-aos="fade-right">J<span>o</span>bply</div>
+                                <div class="footer_adress" data-aos="fade-up">152/3 , Western Road, New York</div>
+                                <div class="footer_tell" data-aos="fade-left">Call Us: +99-8569-5234</div>
+                                <div class="footer_icons" data-aos="zoom-in">
+                                    <a href="" class="footer_icon"><img src="./img/icon/faceboock.svg" alt=""></a>
+                                    <a href="" class="footer_icon"><img src="./img/icon/twitter.svg" alt=""></a>
+                                    <a href="" class="footer_icon"><img src="./img/icon/linkedin.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_list-item" data-aos="fade-up">
+                                    <div class="footer_list_title" data-aos="fade-left">Explore</div>
+                                    <ul class="footer_sublist" data-aos="fade-right">
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Featured Job</a>
+                                        </li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Recent Job
+                                                Post</a></li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Total
+                                                Candidates</a></li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Support</a></li>
+                                    </ul>
+                                </li>
+                                <li class="footer_list-item" data-aos="fade-up">
+                                    <div class="footer_list_title" data-aos="fade-left">Useful Link</div>
+                                    <ul class="footer_sublist" data-aos="fade-right">
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">About Us</a></li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Blog</a></li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Company</a></li>
+                                        <li class="footer_sublist_item"><a href="" class="footer_link">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer_list-item" data-aos="fade-up">
+                                    <div class="footer_list_title" data-aos="fade-left">Latest News</div>
+                                    <ul class="footer_sublist" data-aos="fade-right">
+                                        <li class="footer_sublist_item">
+                                            <a href="" class="footer_link">
+                                                <div class="footer_sublist_item_card" data-aos="zoom-in">
+                                                    <div class="footer_sublist_item_card_img"><img
+                                                            src="./img/footer/footer_img_1.png" alt=""></div>
+                                                    <div class="footer_sublist_item_card_content">
+                                                        <div class="footer_sublist_item_card_content_title">
+                                                            Understanding the Cybersecurity Landscape in 2021</div>
+                                                        <div class="footer_sublist_item_card_content_date">21 June, 2021
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="footer_sublist_item">
+                                            <a href="" class="footer_link">
+                                                <div class="footer_sublist_item_card" data-aos="zoom-in">
+                                                    <div class="footer_sublist_item_card_img"><img
+                                                            src="./img/footer/footer_img_2.png" alt=""></div>
+                                                    <div class="footer_sublist_item_card_content">
+                                                        <div class="footer_sublist_item_card_content_title">How to
+                                                            Design for Maximum Product Trust</div>
+                                                        <div class="footer_sublist_item_card_content_date">21 June, 2021
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_copyright">Copyright 2021, All right reserved</div>
+                    </div>
+                </div>
+            </footer>
+
     </div>
+    <script>
+        AOS.init({
+            duration: 700,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 
 </html>
