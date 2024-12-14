@@ -428,7 +428,6 @@ body {}
     gap: 20px;
     min-height: 50px;
     border-radius: 10px;
-    max-width: 658px;
     height: 70px;
     padding: 22px;
     background: #fff;
@@ -1019,6 +1018,7 @@ body {}
 
     .post_job_video {
         flex: 1 1 auto;
+        max-height: 350px;
     }
 }
 
